@@ -22,16 +22,16 @@ class BreedListViewmodel: ObservableObject {
         return breedRepository.fetchBreedBy(id: id)
     }
     
-    func fetchBreeds(page: Int?, breedsPerPage: Int?) {
+    func fetchBreeds() {
         breeds.append(contentsOf: breedRepository.fetchBreeds(page: page, breedsPerPage: BreedListViewmodel.BreedsPerPage))
-        self.page += 1
+        page += 1
     }
     
     func toggleFavouriteForBreed(withId id: String) {
-        return breedRepository.toggleFavouriteForBreed(withId: id)
+        breedRepository.toggleFavouriteForBreed(withId: id)
     }
     
-    func getFavourites() -> [Breed] {
-        return breedRepository.getFavourites()
+    func getFavourites() {
+        breeds.append(contentsOf: breedRepository.getFavourites())
     }
 }
