@@ -27,5 +27,9 @@ class MockBreedRepository: BreedRepository {
             breeds[index].isFavourite.toggle()
         }
     }
+    
+    func getFavourites() -> [Breed] {
+        return breeds.filter(\.isFavourite)
+    }
 }
 #endif

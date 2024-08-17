@@ -12,4 +12,5 @@ protocol BreedRepository {
     func fetchBreedBy(id: String) -> Breed?
     func fetchBreeds(page: Int?, breedsPerPage: Int?) -> [Breed]
     func toggleFavouriteForBreed(withId id: String)
+    func getFavourites() -> [Breed]
 }
