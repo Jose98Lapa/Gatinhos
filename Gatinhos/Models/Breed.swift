@@ -7,14 +7,15 @@
 
 import Foundation
 
-struct CatBreed: Codable, Identifiable {
+struct Breed: Codable, Identifiable {
+    
     let id: String?
     let name: String?
     let origin: String?
     let temperament: String?
     let description: String?
     let lifeSpan: String?
-    let image: String?
+    let imageURL: String?
     var isFavourite: Bool = false
     
     enum CodingKeys: String, CodingKey {
@@ -24,7 +25,18 @@ struct CatBreed: Codable, Identifiable {
         case lifeSpan
         case description
         case temperament
-        case image
+        case imageURL
+    }
+    
+    init(id: String? = UUID().uuidString, name: String?, origin: String?, temperament: String?, description: String?, lifeSpan: String?, imageURL: String?, isFavourite: Bool) {
+        self.id = id
+        self.name = name
+        self.origin = origin
+        self.temperament = temperament
+        self.description = description
+        self.lifeSpan = lifeSpan
+        self.imageURL = imageURL
+        self.isFavourite = isFavourite
     }
     
     init(from decoder: Decoder) throws {
@@ -37,6 +49,6 @@ struct CatBreed: Codable, Identifiable {
         lifeSpan = try values.decodeIfPresent(String.self, forKey: .lifeSpan)
         description = try values.decodeIfPresent(String.self, forKey: .description)
         temperament = try values.decodeIfPresent(String.self, forKey: .temperament)
-        image = try values.decode(String.self, forKey: .image)
+        imageURL = try values.decode(String.self, forKey: .imageURL)
     }
 }
