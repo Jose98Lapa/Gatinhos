@@ -27,6 +27,7 @@
 		F12AAD082C70CE68004027B8 /* Gatinhos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gatinhos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12AAD1D2C70CE6B004027B8 /* GatinhosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatinhosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12AAD272C70CE6B004027B8 /* GatinhosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatinhosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12AAD3A2C70CE96004027B8 /* Gatinhos.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gatinhos.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +76,7 @@
 		F12AACFF2C70CE68004027B8 = {
 			isa = PBXGroup;
 			children = (
+				F12AAD3A2C70CE96004027B8 /* Gatinhos.xctestplan */,
 				F12AAD0A2C70CE68004027B8 /* Gatinhos */,
 				F12AAD202C70CE6B004027B8 /* GatinhosTests */,
 				F12AAD2A2C70CE6B004027B8 /* GatinhosUITests */,

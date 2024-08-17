@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "3C64ECB8-2D5A-4D68-89F8-77038510D32F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Gatinhos.xcodeproj",
+      "identifier" : "F12AAD072C70CE68004027B8",
+      "name" : "Gatinhos"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Gatinhos.xcodeproj",
+        "identifier" : "F12AAD1C2C70CE6B004027B8",
+        "name" : "GatinhosTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Gatinhos.xcodeproj",
+        "identifier" : "F12AAD262C70CE6B004027B8",
+        "name" : "GatinhosUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
