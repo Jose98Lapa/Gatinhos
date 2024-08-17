@@ -7,6 +7,7 @@
 
 import Foundation
 
+#if DEBUG
 class MockBreedRepository: BreedRepository {
     
     var breeds: [Breed] = Array(repeating: Breed(name: "Gato", origin: "Portugal", temperament: "Fluffy and nice", description: "Nice and cute", lifeSpan: "12 years", imageURL: "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg", isFavourite: true), count: 70)
@@ -27,3 +28,4 @@ class MockBreedRepository: BreedRepository {
         }
     }
 }
+#endif
