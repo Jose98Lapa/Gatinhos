@@ -5,12 +5,10 @@
 //  Created by José Miguel Lapa on 17/08/2024.
 //
 
-
-
 import Foundation
 import Network
 
-class ConnectionHelper: ObservableObject {
+class NetworkMonitor: ObservableObject {
     
     let monitor = NWPathMonitor()
     let queue = DispatchQueue.global(qos: .background)
